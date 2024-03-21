@@ -16,12 +16,15 @@ body {
 .horni {
   background-color: #f1c40f;
 }
+
 .prvni {
   background-color: #2ecc71;
 }
+
 .druhy {
   background-color: #e74c3c;
 }
+
 .treti {
   background-color: #8e44ad;
 }
@@ -34,3 +37,58 @@ body {
 	- 640px
 	- 1000px
 */
+
+
+.kontejner {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+
+@media (min-width: 640px) {
+  .kontejner {
+
+    flex-direction: row;
+
+
+
+  }
+
+
+  .prvni {
+    display: flex;
+    flex-basis: calc(100%/2);
+    flex-wrap: wrap;
+
+  }
+
+  .druhy {
+    display: flex;
+    flex-basis: calc(100%/2);
+    flex-wrap: wrap;
+
+
+  }
+}
+
+@media (min-width: 1000px) {
+  .prvni {
+    display: flex;
+    flex-basis: calc(100%/3);
+    flex-wrap: wrap;
+
+  }
+
+  .druhy {
+    display: flex;
+    flex-basis: calc(100%/3);
+    flex-wrap: wrap;
+  }
+
+  .treti {
+    display: flex;
+    flex-basis: calc(100%/3);
+    flex-wrap: wrap;
+  }
+}
